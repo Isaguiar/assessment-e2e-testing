@@ -17,7 +17,7 @@ This project is meant to be a technical assessment.
    
 **Quick Start **
 
-1. Clone the git repo: git clone https://github.com/Isaguiar/wdio-e2e-testing-luma.git
+1. Clone the git repo: git clone "https://github.com/Isaguiar/assessment-e2e-testing.git" .
 2. Install the dependencies: npm install
 3. It is not necessary to set environment variables since they are not critical information (fake testing data).
 

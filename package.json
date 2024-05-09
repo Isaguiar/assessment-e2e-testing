@@ -1,0 +1,19 @@
+{
+  "name": "assessment-e2e-testing",
+  "version": "1.0.0",
+  "description": "This is an assessment project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Isaguiar/assessment-e2e-testing.git"
+  },
+  "author": "Isabel Aguiar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Isaguiar/assessment-e2e-testing/issues"
+  },
+  "homepage": "https://github.com/Isaguiar/assessment-e2e-testing#readme"
+}

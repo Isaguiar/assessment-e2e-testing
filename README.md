@@ -10,7 +10,7 @@ This project is meant to be a technical assessment.
 
     node: 20.13.0
     npm: 10.3.0
-    typescript: 5.4.5
+    typescript: 10.3.0
     webdriver io: 8.1.1
     mocha: 8.36.1
     eslint/js: 9.2.0

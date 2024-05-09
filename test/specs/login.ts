@@ -1,5 +1,6 @@
 import { expect } from '@wdio/globals'
 import LoginPage from '../pageobjects/login.page'
+import LogOutPage from '../pageobjects/logout.page'
 import SecurePage from '../pageobjects/secure.page'
 
 beforeEach( async function(){
@@ -61,6 +62,11 @@ it('should not login if there are no credentials', async () => {
        expect (LoginPage.inputUsername).not.toBeExisting();
        
     });
+
+    after( async function(){
+        await LogOutPage.logOut;
+    }) 
+
 
 }) 
 

@@ -25,7 +25,7 @@ class LoginPage extends Page {
     }
 
     public open () {
-        return super.open('login');
+        return super.open('customer/account/login');
     }
 }
 

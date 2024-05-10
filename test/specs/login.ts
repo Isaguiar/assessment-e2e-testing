@@ -55,16 +55,16 @@ it('should not login if there are no credentials', async () => {
     });
 
   it('should login with valid credentials', async () => {
-       // await LoginPage.open();
+        // await LoginPage.open();
         await LoginPage.login('aguiara@mail.com', 'Testing1!');
         expect(await SecurePage.errorMessage).toBeTruthy();
         expect (await SecurePage.checkUrl("login")).toBeFalsy;
-       expect (LoginPage.inputUsername).not.toBeExisting();
+        expect (LoginPage.inputUsername).not.toBeExisting();
        
     });
 
     after( async function(){
-        await LogOutPage.logOut;
+         await LogOutPage.logOut;
     }) 
 
 

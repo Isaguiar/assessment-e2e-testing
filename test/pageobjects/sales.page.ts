@@ -11,7 +11,7 @@ class SalesPage extends Page {
     }
     
     public get fourthProduct(){
-        return $(' .product-item:nth-child(2)');
+        return $(' .product-item:nth-child(4)');
     }
 
     public get secondProductLink(){

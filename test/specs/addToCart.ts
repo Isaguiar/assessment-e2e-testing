@@ -15,6 +15,8 @@ describe('Add products to cart  Whats New Page', () => {
 
         //Verify that a confirming message is displayed after adding an item
         expect ((await SalesPage.cartMessageText()).length).toBeGreaterThan(0);
+        
+        //Verify if the confirming message contains the added item
         expect (SalesPage.checkSecongProductMessage).toBeTruthy();
         expect ((await SalesPage.cartMessageText()).includes ("12345")).toBeFalsy();
         });
@@ -22,5 +24,23 @@ describe('Add products to cart  Whats New Page', () => {
     it('should increment the number of the cart counter after adding a product', async () => {
         expect(await SalesPage.productCartQty()).toBeGreaterThanOrEqual(1);
         }); 
+
+        it('should add a second product without color and size choice to the cart from the main page', async () => {
+            //Add a first product to cart    
+            await SalesPage.addToCart (SalesPage.fourthProduct, SalesPage.fourthProductAddCart);
+    
+            //Verify that a confirming message is displayed after adding an item
+            expect ((await SalesPage.cartMessageText()).length).toBeGreaterThan(0);
+            
+            //Verify if the confirming message contains the added item
+            expect (SalesPage.checkSecongProductMessage).toBeTruthy();
+            expect ((await SalesPage.cartMessageText()).includes ("12345")).toBeFalsy();
+            });
+    
+        it('should increment the number of the cart counter after adding a product', async () => {
+            expect(await SalesPage.productCartQty()).toBeGreaterThanOrEqual(2);
+            });    
+
+
             
     })
